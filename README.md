@@ -1,7 +1,7 @@
 # MindThaw ❄️🌷
 > *From Winter Isolation to Spring Renewal.*
 
-![MindThaw Dashboard](https://github.com/user-attachments/assets/PLACEHOLDER_FOR_YOUR_SCREENSHOT_URL)
+![MindThaw Dashboard](https://github.com/Mohib1402/MindThaw/blob/main/public/MindThawDashboard.png)
 
 ## 💡 The Inspiration
 Journaling is a powerful tool for mental health, but text on a screen often feels flat and clinical. We struggle to visualize our emotional progress. 
