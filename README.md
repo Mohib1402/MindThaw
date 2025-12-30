@@ -1,16 +1,64 @@
-# React + Vite
+# MindThaw ❄️🌷
+> *From Winter Isolation to Spring Renewal.*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![MindThaw Dashboard](https://github.com/user-attachments/assets/PLACEHOLDER_FOR_YOUR_SCREENSHOT_URL)
 
-Currently, two official plugins are available:
+## 💡 The Inspiration
+Journaling is a powerful tool for mental health, but text on a screen often feels flat and clinical. We struggle to visualize our emotional progress. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**MindThaw** was born from the idea that our emotions are organic—they grow, change, and bloom. We wanted to transform the act of journaling from a "task" into a "gardening experience," where users can see their emotional history evolve from a cold, dark winter into a vibrant, blooming spring.
 
-## React Compiler
+## 🚀 What it Does
+MindThaw is an AI-powered 3D journaling experience. 
+1.  **AI Analysis:** The user enters their thoughts. Google Gemini 2.5 Flash analyzes the sentiment, extracting a "Mood Score" and assigning a symbolic color.
+2.  **Procedural Generation:** Using Three.js, the app procedurally generates a unique 3D flower. 
+    * *Sad/Anxious:* The flower is jagged, slow-moving, and cool-toned. The environment turns to night.
+    * *Happy/Energetic:* The flower is round, bouncy, and warm-toned. The environment shifts to a warm sunset.
+3.  **The Garden (Persistence):** Every entry is saved to a Supabase database. Over time, the user builds a "Garden of Emotions," visualizing their mental journey.
+4.  **Immersive Atmosphere:** The app features dynamic lighting, post-processing (bloom/glow), and adaptive audio that shifts between winter winds and spring birds based on the user's average mood.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎥 Demo Video
+[![Watch the MindThaw Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
+*(Click the image above to watch the walkthrough)*
 
-## Expanding the ESLint configuration
+## 🌐 Live Link
+[Try MindThaw Live](https://mind-thaw.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+* **Frontend:** React, Vite, Tailwind CSS
+* **3D Engine:** React Three Fiber (Three.js), React Spring (Physics), Drei
+* **AI Brain:** Google Gemini API (`gemini-2.5-flash`)
+* **Database:** Supabase (PostgreSQL)
+* **State Management:** Zustand
+* **Post-Processing:** `@react-three/postprocessing` (Bloom, Vignette)
+
+## ⚙️ How to Run Locally
+
+1.  **Clone the repo**
+    ```bash
+    git clone [https://github.com/yourusername/mind-thaw.git](https://github.com/yourusername/mind-thaw.git)
+    cd mind-thaw
+    ```
+
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Set up Environment Variables**
+    Create a `.env` file in the root and add your keys:
+    ```env
+    VITE_GEMINI_API_KEY=your_gemini_key
+    VITE_SUPABASE_URL=your_supabase_url
+    VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+    ```
+
+4.  **Run the App**
+    ```bash
+    npm run dev
+    ```
+
+## 🏆 Hackathon Challenges Overcome
+* **Procedural Art:** Instead of using static assets, we wrote custom shaders and math to warp torus geometries in real-time based on AI sentiment scores.
+* **Adaptive Audio:** We implemented an audio mixing engine that crossfades between two distinct tracks (Winter vs. Spring) based on the calculated average mood of the user's history.
+* **Mobile Responsiveness:** We built a custom "Cinematic Dashboard" layout that adapts from a sidebar interface on desktop to a scrollable vertical stack on mobile.
