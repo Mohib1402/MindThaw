@@ -18,7 +18,7 @@ MindThaw is an AI-powered 3D journaling experience.
 4.  **Immersive Atmosphere:** The app features dynamic lighting, post-processing (bloom/glow), and adaptive audio that shifts between winter winds and spring birds based on the user's average mood.
 
 ## 🎥 Demo Video
-[![Watch the MindThaw Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE)
+[![Watch the MindThaw Demo](https://youtu.be/llfQBwQQvYw)
 *(Click the image above to watch the walkthrough)*
 
 ## 🌐 Live Link
